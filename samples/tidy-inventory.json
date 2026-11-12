@@ -1,0 +1,7 @@
+{
+  "volumes": [
+    {"name": "data-active-db", "kind": "block", "state": "ATTACHED", "size_gbs": 1000, "days_in_state": 200, "backup_policy": "gold", "tags": {"env": "prod", "owner": "db-team"}},
+    {"name": "boot-web-1", "kind": "boot", "state": "ATTACHED", "size_gbs": 50, "days_in_state": 200, "backup_policy": "silver", "tags": {"env": "prod"}},
+    {"name": "scratch-temp", "kind": "block", "state": "AVAILABLE", "size_gbs": 50, "days_in_state": 2, "backup_policy": "bronze", "tags": {"env": "dev"}}
+  ]
+}
