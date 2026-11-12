@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oci-block-volume-orphan-detector"
+version = "0.1.0"
+description = "Offline orphan/hygiene detector for OCI Block Volume inventory exports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+oci-block-volume-orphan-detector = "oci_block_volume_orphan_detector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
