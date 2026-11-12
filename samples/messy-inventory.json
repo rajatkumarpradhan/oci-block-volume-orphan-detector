@@ -1,0 +1,8 @@
+{
+  "volumes": [
+    {"name": "data-old-etl", "kind": "block", "state": "AVAILABLE", "size_gbs": 500, "days_in_state": 45, "backup_policy": null, "tags": {}},
+    {"name": "boot-deleted-web-2", "kind": "boot", "state": "AVAILABLE", "size_gbs": 50, "days_in_state": 30, "backup_policy": "gold", "tags": {"env": "prod"}},
+    {"name": "data-active-db", "kind": "block", "state": "ATTACHED", "size_gbs": 1000, "days_in_state": 200, "backup_policy": null, "tags": {"env": "prod", "owner": "db-team"}},
+    {"name": "scratch-temp", "kind": "block", "state": "AVAILABLE", "size_gbs": 50, "days_in_state": 2, "backup_policy": "bronze", "tags": {"env": "dev"}}
+  ]
+}
